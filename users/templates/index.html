@@ -1,0 +1,20 @@
+<head>
+    <script>
+        var ws = new WebSocket('ws://localhost:8000/');
+        
+        ws.onmessage = event => console.log(event.data)
+        
+        ws.onopen = () => {
+                timer = setInterval(() => {
+                    ws.send('ping');
+                }, 1000);
+            };
+            
+            ws.onclose = ws.onerror = () => {
+                clearInterval(timer);
+            };
+    </script>
+</head>
+<body>
+    <h2>Websocket</h2>
+</body>
