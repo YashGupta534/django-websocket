@@ -1,0 +1,2 @@
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [23744]

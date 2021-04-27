@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tpfd4d$qul^f0+=f3%vpxxrcq6*e@d(je=16#l-!$lnr2ezc(3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dj-websocket.azurewebsites.net']
 
 
 # Application definition
